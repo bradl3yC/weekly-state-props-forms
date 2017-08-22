@@ -16,6 +16,7 @@ class PlayList extends React.Component {
       return results.json();
       }).then(data => {
         this.setState({songs: data});
+        console.log(this.state.songs)
       })
   }
 
@@ -24,11 +25,12 @@ class PlayList extends React.Component {
   }
 
   render() {
-    //map over songs and pass each song into PlayListItem as props?
     return(
       <div>
-        {map(this.props.songs, (song) => (
-          <PlayListItem song={song}/>
+        {map(this.state.songs, (song) => (
+          <div>
+            <PlayListItem song={song}/>
+          </div>
         ))}
       </div>
     )

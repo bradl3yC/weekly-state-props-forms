@@ -1,0 +1,15 @@
+.song-card {
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: left;
+  align-items: left;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  margin: 2em;
+}
+
+.song-card p {
+  margin-left: 1em;
+}
