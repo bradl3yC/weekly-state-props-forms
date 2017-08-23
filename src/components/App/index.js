@@ -9,10 +9,6 @@ class App extends Component {
     super(props)
     this.state = {
       songs: [],
-      userName: "",
-      songTitle: "",
-      songArtist: "",
-      songNotes: "",
     }
   }
 
@@ -27,7 +23,7 @@ class App extends Component {
           'Content-Type': 'application/json'
       }
     }
-    ).then(response => {
+    ).then(() => {
       this.fetchPlayList()
     }).catch(err => {
       console.log(err);
