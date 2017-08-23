@@ -5,10 +5,12 @@
   align-items: left;
   border: 1px solid black;
   border-radius: 10px;
-  width: 30%;
-  height: auto;
   margin: 2em;
 }
+
+/*.song-card div {
+  width: 50%;
+}*/
 
 .song-card p {
   margin-left: 1em;
