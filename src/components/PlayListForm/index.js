@@ -35,7 +35,7 @@ class PlayListForm extends React.Component {
           <input onChange={(event) => this.onChangeHandler('userName', event.target.value)} type="text" name="userName" placeholder="Username" value={this.state.userName}/>
           <input onChange={(event) => this.onChangeHandler('songArtist', event.target.value)} type="text" name="songArtist" placeholder="Artist" value={this.state.songArtist}/>
           <input onChange={(event) => this.onChangeHandler('songTitle', event.target.value)} type="text" name="songTitle" placeholder="Song Title" value={this.state.songTitle}/>
-          <textarea onChange={(event) => this.onChangeHandler('songNotes', event.target.value)} placeholder="songNotes" value={this.state.songNotes}></textarea>
+          <textarea onChange={(event) => this.onChangeHandler('songNotes', event.target.value)} placeholder="Song Notes:" value={this.state.songNotes}></textarea>
           <button>Add Song!</button>
         </form>
       </div>

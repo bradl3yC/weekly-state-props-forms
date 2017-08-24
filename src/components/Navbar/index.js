@@ -3,7 +3,7 @@ import './index.css';
 
 const Navbar = () => (
   <div className="app-header">
-    <p>Insert some Nav stuffs here</p>
+    <h1>Playlist!!</h1>
   </div>
 )
 

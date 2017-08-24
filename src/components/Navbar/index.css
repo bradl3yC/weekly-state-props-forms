@@ -1,16 +1,20 @@
-.app-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .app-header {
+  height: 80px;
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.app-header h1 {
+  font-family: 'Indie Flower', cursive;
+  animation: logo-move infinite 5s alternate;
+  font-size: 9em;
+  margin: 0px;
+  width: 900px;
+}
+
+@keyframes logo-move {
+  from { transform: translate(100px, 0); }
+  to { transform: translate(-200px, 0); }
 }
